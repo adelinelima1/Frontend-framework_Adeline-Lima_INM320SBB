@@ -1,0 +1,19 @@
+{
+  "name": "adeline_lima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codename": "lite-server --baseDir=\"public\"",
+    "anotherone": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run anotherone\" \"npm run codename\""
+  },
+  "keywords": [],
+  "author": "Adeline Lima",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.94.0"
+  }
+}

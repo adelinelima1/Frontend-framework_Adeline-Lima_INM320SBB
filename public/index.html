@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - Frontend Framework</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" />
+    <div class="mobile-topbar d-lg-none">
+        <h5 class="mb-0">Dashboard Kit</h5>
+        <label for="menu-toggle" class="burger mb-0"><i class="fas fa-bars"></i></label>
+    </div>
+    
+    <aside class="sidebar">
+        <div class="sidebar-brand d-flex align-items-center mb-4">
+            <img src="assets/images/logo.png" alt="Logo" class="logo me-2"/>
+            <h5 class="dashboard-kit-title mb-0">Dashboard Kit</h5>
+        </div>
+        <nav class="nav flex-column" id="sidebar-menu">
+            <a class="nav-link" href="#"><i class="fas fa-chart-pie"></i>Overview</a>
+            <a class="nav-link" href="#"><i class="fas fa-ticket-alt"></i>Tickets</a>
+            <a class="nav-link" href="#"><i class="fas fa-lightbulb"></i>Ideas</a>
+            <a class="nav-link" href="#"><i class="fas fa-users"></i>Contacts</a>
+            <a class="nav-link" href="#"><i class="fas fa-user-tie"></i>Agents</a>
+            <a class="nav-link" href="#"><i class="fas fa-newspaper"></i>Articles</a>
+            <div class="mt-auto">
+                <a class="nav-link" href="#"><i class="fas fa-cog"></i>Settings</a>
+                <a class="nav-link" href="#"><i class="fas fa-award"></i>Subscription</a>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <header class="main-header d-flex justify-content-between align-items-center mb-4">
+            <h3 class="mb-0">Overview</h3>
+            <div class="top-actions d-flex align-items-center gap-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fas fa-bell fs-5"></i>
+
+                <div class="vertical-divider"></div>
+                
+                <div class="profile-dropdown d-flex align-items-center gap-2">
+                    <div class="d-none d-md-block text-end">
+                        <p class="mb-0">Jones Ferdinand</p>
+                    </div>
+                    <img src="assets/images/avatar.png" alt="Avatar" class="rounded-circle profile-avatar" />
+                </div>
+            </div>
+        </header>
+
+        <div class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="statcard">
+                    <div class="statcard-title">Unresolved</div>
+                    <div class="statcard-value">60</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="statcard active">
+                    <div class="statcard-title">Overdue</div>
+                    <div class="statcard-value">16</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="statcard">
+                    <div class="statcard-title">Open</div>
+                    <div class="statcard-value">43</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="statcard">
+                    <div class="statcard-title">On Hold</div>
+                    <div class="statcard-value">64</div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-12"> 
+            <div class="trends-and-summary-container"> 
+                <div class="trends-chart-section"> 
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <h5 class="mb-0">Today's trends</h5>
+                            <p class="chart-date mb-0">as of 25 May 2019, 09:41 PM</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 chart-legend">
+                            <span class="text-muted"><span class="legend-dot today"></span> Today</span>
+                            <span class="text-muted"><span class="legend-dot yesterday"></span> Yesterday</span>
+                        </div>
+                    </div>
+                    <img src="assets/images/full-graph.png" alt="Trends chart" class="img-fluid"/>
+                </div>
+
+                <aside class="summary-stats-section"> 
+                    <div class="summary-item">
+                        <div class="summary-label">Resolved</div>
+                        <div class="summary-value">449</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-label">Received</div>
+                        <div class="summary-value">426</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-label">Average first response time</div>
+                        <div class="summary-value">33m</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-label">Average response time</div>
+                        <div class="summary-value">3h 8m</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-label">Resolution within SLA</div>
+                        <div class="summary-value">94%</div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col-12 col-xl-6">
+                <section class="info-box">
+                    <div class="info-box-header"> 
+                        <h6>Unresolved tickets</h6>
+                        <a class="view-link" href="#">View details</a>
+                    </div>
+                    <div class="subheading">Group: Support</div>
+                    <ul class="list-unstyled">
+                        <li>Waiting on Feature Request <span class="badge-text-dark">4238</span></li>
+                        <li>Awaiting Customer Response <span class="badge-text-dark">1005</span></li>
+                        <li>Awaiting Developer Fix <span class="badge-text-dark">914</span></li>
+                        <li>Pending <span class="badge-text-dark">281</span></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-12 col-xl-6">
+                <section class="info-box">
+                    <div class="info-box-header">
+                        <h6>Tasks</h6>
+                        <a class="view-link" href="#">View all</a>
+                    </div>
+                    <div class="subheading">Today</div>
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Create new task" aria-label="Create new task">
+                        <button class="btn btn-outline-secondary btn-sm create-task-btn" type="button"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <ul class="task-list list-unstyled">
+                        <li>
+                            <div class="task-item">
+                            <div class="left">
+                                <input type="checkbox" id="task1" class="form-check-input">
+                                <label for="task1">Finish ticket update</label>
+                            </div>
+                            <span class="badge urgency">URGENT</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="task-item">
+                            <div class="left">
+                                <input type="checkbox" id="task2" class="form-check-input">
+                                <label for="task2">Create new ticket example</label>
+                            </div>
+                            <span class="badge new">NEW</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="task-item">
+                                <div class="left">
+                                    <input type="checkbox" id="task3" class="form-check-input" checked>
+                                    <label for="task3">Update ticket report</label>
+                                </div>
+                                <span class="badge default">DEFAULT</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#taskModal">View Task Details</button>
+                    
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="taskModal" tabindex="-1" aria-labelledby="taskModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="taskModalLabel">Task Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Title:</strong> Finish ticket update</p>
+                    <p><strong>Priority:</strong> Urgent</p>
+                    <p><strong>Status:</strong> In progress</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Mark as Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
